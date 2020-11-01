@@ -47,7 +47,10 @@ const Index = () => {
                 Logout
               </button>
               <p className='block py-2 px-5 rounded shadow'>
-                User: {session?.user.name || 'not logged in'}
+                User:{' '}
+                {!loading
+                  ? session?.user.name || 'not logged in'
+                  : 'loading...'}
               </p>
             </div>
           </div>
