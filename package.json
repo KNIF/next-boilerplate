@@ -4,9 +4,12 @@
   "description": "Next.js Boilerplate with Next.js, Typescript, Tailwind, Next-Auth, FaunaDB, Meilisearch, Google Analytics, Sentry, Cypress, SWR, Axios",
   "scripts": {
     "dev": "next",
+    "type-check": "tsc",
+    "test": "cypress open",
     "build": "next build",
+    "profile": "next build --profile",
     "start": "next start",
-    "type-check": "tsc"
+    "export": "next build && next export"
   },
   "repository": {
     "type": "git",
