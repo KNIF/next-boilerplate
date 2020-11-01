@@ -1,0 +1,20 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */

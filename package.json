@@ -1,0 +1,60 @@
+{
+  "name": "next-boilerplate",
+  "version": "1.0.0",
+  "description": "Next.js Boilerplate with Next.js, Typescript, Tailwind, Next-Auth, FaunaDB, Meilisearch, Google Analytics, Sentry, Cypress, SWR, Axios",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KNIF/next-boilerplate.git"
+  },
+  "keywords": [
+    "next",
+    "typescript",
+    "tailwind",
+    "next-auth",
+    "faunadb",
+    "meilisearch",
+    "google-analytics",
+    "sentry",
+    "cypress",
+    "swr",
+    "axios"
+  ],
+  "author": "KNIF <admin@knif.dev>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KNIF/next-boilerplate/issues"
+  },
+  "homepage": "https://github.com/KNIF/next-boilerplate#readme",
+  "dependencies": {
+    "@sentry/browser": "latest",
+    "@sentry/integrations": "latest",
+    "@sentry/node": "latest",
+    "@sentry/webpack-plugin": "latest",
+    "@zeit/next-source-maps": "0.0.4-canary.1",
+    "axios": "latest",
+    "faunadb": "latest",
+    "meilisearch": "latest",
+    "mysql": "latest",
+    "next": "latest",
+    "next-auth": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swr": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "cypress": "latest",
+    "postcss-flexbugs-fixes": "latest",
+    "postcss-preset-env": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
