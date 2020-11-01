@@ -1,2 +1,1 @@
-# next-boilerplate
- Next.js Boilerplate with Next.js, Typescript, Tailwind, Next-Auth, FaunaDB, Meilisearch, Google Analytics, Sentry, Cypress, SWR, Axios
+![next-boilerplate](https://socialify.git.ci/KNIF/next-boilerplate/image?description=1&language=1&logo=https%3A%2F%2Fknif.dev%2Fassets%2Fblog%2Fauthors%2FKNIF.png&owner=1&pattern=Plus&theme=Dark)
