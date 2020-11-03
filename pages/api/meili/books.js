@@ -8,14 +8,13 @@ export default async (req, res) => {
     });
 
     if (!client)
-      return res
-        .status(500)
-        .json({
-          error: new Error('Missing MeiliSearch environment variables'),
-        });
+      return res.status(500).json({
+        error: new Error('Missing MeiliSearch environment variables'),
+      });
 
     const index = client.getIndex('books');
-    const search = await index.search(q, { limit: 5 });
+    const query = 'h'; // search query, in this case we want all books with the letter h
+    const search = await index.search(query, { limit: 5 });
 
     res.json(search.hits);
   } catch (error) {
