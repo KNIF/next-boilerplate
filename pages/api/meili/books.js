@@ -16,7 +16,7 @@ export default async (req, res) => {
     const query = 'h'; // search query, in this case we want all books with the letter h
     const search = await index.search(query, { limit: 5 });
 
-    res.json(search.hits);
+    res.json(search);
   } catch (error) {
     res.status(500).json({ error });
   }
