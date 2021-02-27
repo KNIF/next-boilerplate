@@ -1,6 +1,6 @@
 {
   "name": "next-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Next.js Boilerplate with Next.js, Typescript, Tailwind, Next-Auth, FaunaDB, Meilisearch, Google Analytics, Sentry, Cypress, SWR, Axios",
   "scripts": {
     "dev": "next",
