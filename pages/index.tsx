@@ -35,13 +35,13 @@ const Index = () => {
 
             <div className='sm:flex'>
               <button
-                onClick={signIn}
+                onClick={() => signIn()}
                 className='block py-2 px-5 rounded shadow bg-blue-500 text-blue-100 sm:mr-2 mb-2 sm:mb-0'
               >
                 Login
               </button>
               <button
-                onClick={signOut}
+                onClick={() => signOut()}
                 className='block py-2 px-5 rounded shadow bg-gray-500 text-gray-100 sm:mr-2 mb-2 sm:mb-0'
               >
                 Logout
