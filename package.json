@@ -39,7 +39,6 @@
     "@sentry/integrations": "latest",
     "@sentry/node": "latest",
     "@sentry/webpack-plugin": "latest",
-    "@zeit/next-source-maps": "0.0.4-canary.1",
     "axios": "latest",
     "faunadb": "latest",
     "meilisearch": "latest",

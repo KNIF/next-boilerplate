@@ -1,7 +1,3 @@
-// Use the hidden-source-map option when you don't want the source maps to be
-// publicly available on the servers, only to the error reporting
-const withSourceMaps = require('@zeit/next-source-maps')();
-
 // Use the SentryWebpack plugin to upload the source maps during build step
 const SentryWebpackPlugin = require('@sentry/webpack-plugin');
 const {
@@ -23,10 +19,14 @@ const COMMIT_SHA =
 process.env.SENTRY_DSN = SENTRY_DSN;
 const basePath = '';
 
-module.exports = withSourceMaps({
+module.exports = {
   serverRuntimeConfig: {
     rootDir: __dirname,
   },
+  future: {
+    webpack5: true,
+  },
+  productionBrowserSourceMaps: true,
   webpack: (config, options) => {
     // In `pages/_app.js`, Sentry is imported from @sentry/browser. While
     // @sentry/node will run in a Node.js environment. @sentry/node will use
@@ -72,4 +72,4 @@ module.exports = withSourceMaps({
     return config;
   },
   basePath,
-});
+};
