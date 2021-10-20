@@ -23,9 +23,7 @@ module.exports = {
   serverRuntimeConfig: {
     rootDir: __dirname,
   },
-  future: {
-    webpack5: true,
-  },
+  webpack5: true,
   productionBrowserSourceMaps: true,
   webpack: (config, options) => {
     // In `pages/_app.js`, Sentry is imported from @sentry/browser. While
